@@ -122,7 +122,7 @@ def init():
     global searcher_sols_number, searcher_sol, sample_sol, sample_sol_best, sampleV_sol,num_identity_bit
     global searcher_sol_fitness, sample_sol_fitness, sample_sol_best_fitness, sampleV_sol_fitness, best_sol
 
-    num_identity_bit = int(math.log2(num_region))
+    num_identity_bit = int(math.log(num_region, 2))
 
     searcher_sols_number = np.zeros((num_searcher, num_bit_sol+num_identity_bit),dtype=int)
     searcher_sol = np.zeros((num_searcher, num_bit_sol),dtype=int)
