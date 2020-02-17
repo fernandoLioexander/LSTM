@@ -1,10 +1,11 @@
 import numpy as np
 import pandas as pd
 import math
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Dropout, LSTM
-from tensorflow.keras.constraints import max_norm
-from tensorflow.keras import backend as K
+
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, LSTM
+from keras.constraints import max_norm
+from keras import backend as K
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import r2_score, mean_squared_error
 import random
@@ -52,11 +53,11 @@ L_fitness = []
 
 #Hyperparameter Initialitation
 num_run = 1
-num_iter = 10
+num_iter = 25
 num_bit_sol = 5
-num_searcher = 2
-num_region = 2
-num_sample = 2
+num_searcher = 4
+num_region = 4
+num_sample = 4
 num_player = 4
 
 num_identity_bit = 0
