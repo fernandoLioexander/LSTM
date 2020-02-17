@@ -457,8 +457,8 @@ def preprocessData(df):
 
 def splitData(dataset, out, sliding_window, threshold1, threshold2):
     # Splitting Data into Train & Test
-    split1 = math.ceil(threshold1 * len(dataset))
-    split2 = math.ceil(threshold2 * len(dataset))
+    split1 = int(math.ceil(threshold1 * len(dataset)))
+    split2 = int(math.ceil(threshold2 * len(dataset)))
 
     train = dataset[:split1]
     valid = dataset[split1 - sliding_window:split2]
