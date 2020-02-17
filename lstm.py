@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 import math
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, LSTM
@@ -431,13 +430,6 @@ def main():
     f = open("best.txt", "w+")
     f.write("{}\n{}".format(best_sol,best_hyp))
     f.close()
-    # plt.figure(figsize=(10, 6))
-    # plt.plot(L_best, color='black', label='Best Current RMSE')
-    # plt.title('Convergence')
-    # plt.xlabel('Iteration')
-    # plt.ylabel('RMSE')
-    # plt.legend()
-    # plt.show()
 
 def preprocessData(df):
     # Selecting Columns
