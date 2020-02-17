@@ -389,6 +389,10 @@ def main():
     df = df.dropna()
 
     dataset, out = preprocessData(df)
+    
+    print("nan dataset ",dataset.isna().sum())
+    print(dataset.loc[dataset['Close'] == 'null'])
+    print(dataset.loc[dataset['Volume'] == 'null'])
 
     threshold1 = 0.8
     threshold2 = 0.9
