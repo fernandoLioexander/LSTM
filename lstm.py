@@ -103,7 +103,7 @@ def random_hyperparameter():
                     rrandom(0, n_lstm_neuron), 
                     rrandom(0, n_dropout),
                     rrandom(0, n_batch_size),
-                   rrandom(0, n_cols])
+                   rrandom(0, n_cols)])
 
 def create_hyperparameter(sol):
   
@@ -364,7 +364,7 @@ def evaluate_fitness(sol):
     num_LSTM_units = int(hyp['lstm_neuron'])
     dropout = float(hyp['dropout'])
     batch_size = int(hyp['batch_size'])
-    cols = hyp['columns']
+    cols = hyp['column']
 
 
     # print("Parameter : Sliding window = ",sliding_window," lstm_neuron = ",num_LSTM_units," dropout = ",dropout, " batch_size :",batch_size)
